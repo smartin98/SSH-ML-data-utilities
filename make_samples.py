@@ -1,5 +1,5 @@
 # 2023-05-02 Scott Martin
-# Code to pre-process the subsetted data into Keras-ready input-output pairs, save the pairs in TFRecord chunks of size ~100MB for optimal data pipeline performance.
+# Code to pre-process the subsetted data into Keras-ready input-output pairs, save the pairs in batches of size ~100MB.
 
 import numpy as np
 import datetime
