@@ -215,7 +215,7 @@ def extract_tracked(data_tracked, L_x, L_y, lon0, lat0, transformer_ll2xyz, nrt)
     if nrt==False:
         ds['longitude'] = (ds['longitude']-lon0+180)%360-180
     else:
-        ds['longitude'] = ds['longitude'] + 180
+        ds['longitude'] = ds['longitude']%360
         ds['longitude'] = (ds['longitude']-lon0+180)%360-180
     
     longitude = np.array(ds['longitude']).flatten()
